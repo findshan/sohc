@@ -1,0 +1,8 @@
+# steam-merged dataset config
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: product_id
+TIME_FIELD: timestamp
+load_col:
+    inter: [user_id, product_id, timestamp]
+
+field_separator: "\t"

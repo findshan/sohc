@@ -1,0 +1,21 @@
+# RecBole Runtime Files
+saved/
+log/
+dataset_example/ml-100k/*.zip
+dataset_example/ml-100k/*.zip.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Model Checkpoints
+*.pth
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

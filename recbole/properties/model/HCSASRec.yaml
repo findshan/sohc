@@ -1,0 +1,19 @@
+# HCSASRec default config
+# Reference: "Hyper-Connections" (Zhu et al., 2024, arXiv:2409.19606)
+
+# ── Hyper-Connection specific ───────────────────────────────────────────────
+expansion_rate: 4           # (int) Number of hyper-hidden vectors N. Paper default: 4.
+dynamic_hc: True            # (bool) Use dynamic (input-dependent) HC weights.
+hc_use_tanh: True           # (bool) Apply tanh on dynamic delta (recommended).
+
+# ── Standard SASRec parameters ─────────────────────────────────────────────
+n_layers: 2                 # (int) Number of transformer blocks.
+n_heads: 2                  # (int) Number of attention heads.
+hidden_size: 64             # (int) Hidden dimension D.
+inner_size: 256             # (int) FFN intermediate dimension.
+hidden_dropout_prob: 0.5    # (float) Dropout probability.
+attn_dropout_prob: 0.5      # (float) Attention-weight dropout probability.
+hidden_act: 'gelu'          # (str) FFN activation. Choices: gelu/relu/swish/tanh/sigmoid.
+layer_norm_eps: 1e-12       # (float) LayerNorm epsilon.
+initializer_range: 0.02     # (float) Std for normal weight initialisation.
+loss_type: 'CE'             # (str) Loss type. Choices: CE / BPR.

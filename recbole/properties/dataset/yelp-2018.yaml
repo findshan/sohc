@@ -1,0 +1,9 @@
+# yelp-2018 dataset config
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+TIME_FIELD: timestamp
+load_col:
+    inter: [user_id, item_id, timestamp]
+# Yelp-2018 sometimes uses \t separator, which is the default, 
+# but we ensure it matches the loader.
+field_separator: "\t"
