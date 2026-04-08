@@ -47,6 +47,8 @@ pip install -r requirements.txt
 
 | Dataset | Model | Recall@10 | NDCG@10 | MRR@10 |
 | :--- | :--- | :--- | :--- | :--- |
+| **MovieLens-100K** | SASRec | 0.1124 | 0.0545 | 0.0371 |
+| | **SOHCSASRec** | **0.1273** | **0.0606** | **0.0407** |
 | **Steam** | SASRec | 0.1205 | 0.0626 | 0.0453 |
 | | **SOHCSASRec** | **0.1243** | **0.0642** | **0.0462** |
 | **MovieLens-1M** | SASRec | 0.2642 | 0.1481 | 0.1122 |
