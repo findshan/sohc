@@ -50,22 +50,6 @@ Sequential recommendation aims to predict the next item based on user historical
                         +---------------------------+
 ```
 
----
-
-## 📊 Experimental Results (v3 Aligned)
-
-We evaluated SOHCSASRec across several benchmark datasets. The results demonstrate significant improvements in both Recall and NDCG over the SASRec baseline.
-
-| Dataset | Model | Recall@10 | NDCG@10 | MRR@10 | Gain (R@10) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **MovieLens-100K** | SASRec | 0.1124 | 0.0545 | 0.0371 | Base |
-| | **SOHCSASRec** | **0.1273** | **0.0606** | **0.0407** | <font color="green">**+13.26%**</font> |
-| **Steam** | SASRec | 0.1205 | 0.0626 | 0.0453 | Base |
-| | **SOHCSASRec** | **0.1243** | **0.0642** | **0.0462** | <font color="green">**+3.15%**</font> |
-| **MovieLens-1M** | SASRec | 0.2642 | 0.1481 | 0.1122 | Base |
-| | **SOHCSASRec** | **0.2692** | **0.1511** | **0.1151** | <font color="green">**+1.89%**</font> |
-
----
 
 ## 📦 Installation & Quick Start
 
