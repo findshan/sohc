@@ -77,16 +77,37 @@ python experiments/scripts/run_group.py --datasets ml-1m,steam,beauty,yelp --gpu
 
 ## 📝 Citation
 
-If you find this work or the SOHC mechanism useful in your research, please cite:
+This work is published at **ACM CIKM 2026** (November 7-11, 2026, Rome, Italy).
 
 ```bibtex
-@article{shan2026sohc,
-  title={Special Orthogonal Hyper-Connections for Sequential Recommendation},
-  author={Shan, Find and Liu, Wei},
-  journal={arXiv preprint},
-  year={2026}
+@inproceedings{deng2026sohc,
+  title     = {Special Orthogonal Hyper-Connections for Geometry-Preserving Deep Routing},
+  author    = {Liu, Wei and Zhang, Xinyi and Deng, Wenshan and Zhu, Huaijie and
+               Zheng, Libin and Yu, Jianxing and Yin, Jian},
+  booktitle = {Proceedings of the 35th ACM International Conference on
+               Information and Knowledge Management (CIKM '26)},
+  year      = {2026},
+  publisher = {Association for Computing Machinery}
 }
 ```
+
+---
+
+## 👤 Contributions
+
+**Method design, implementation, experiments and paper writing: Wenshan Deng** ([@findshan](https://github.com/findshan))
+
+- Proposed the SOHC framework: exact isometric routing on the special orthogonal group via the Cayley transform.
+- Designed and implemented the gated dual-stream architecture (isometric propagation + semantic refinement).
+- Ran every experiment reported in the paper:
+  - **36 / 60-layer NanoGPT** on FineWeb10B (validation loss, training-time Pareto frontier, depth sweep)
+  - **12-layer SASRec** on ML-1M / ML-100K (MRR@10, HR@10, NDCG@10)
+  - **Four-way ablations** isolating orthogonal constraint / semantic stream / routing dimension / adaptive gate
+  - **Effective-rank analysis** of representation degeneration
+- Wrote the manuscript and the code in this repository.
+
+**Timeline note.** The method, all code and every experiment in this repository predate the paper's
+camera-ready submission; the commit history is the authoritative record of when each piece was produced.
 
 ## 🙏 Acknowledgement
 This project is built upon the excellent [RecBole](https://github.com/RUCAIBox/RecBole) framework.
